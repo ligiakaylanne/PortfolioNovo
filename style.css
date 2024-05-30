@@ -114,6 +114,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 2.5em;
     color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
@@ -194,7 +195,7 @@ p{
     text-decoration: none;
     border: none;
     border-radius: 20px;
-    background-color: #FF6B6B; /* Cor de fundo vermelha */
+    background-color: #4B87C3; /* Cor de fundo vermelha */
     color: #FFFFFF; /* Cor do texto branca */
     padding: 10px 20px; /* Espaçamento interno */
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte divertida */
@@ -205,14 +206,14 @@ p{
 
 /* Hover Effect */
 .curriculo:hover, .contato:hover {
-    background-color: #FF8E8E; /* Mudança de cor ao passar o mouse */
+    background-color: #8EFF8E; /* Mudança de cor ao passar o mouse */
     transform: scale(1.05); /* Efeito de escala ao passar o mouse */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
 }
 
 /* Estilo diferente para o link de contato */
 .contato {
-    background-color: #6BFF6B; /* Cor de fundo verde */
+    background-color: #4B87C3; /* Cor de fundo verde */
 }
 
 /* Hover Effect para o link de contato */
@@ -220,11 +221,20 @@ p{
     background-color: #8EFF8E; /* Mudança de cor ao passar o mouse para o link de contato */
 }
 
-hr{
-    color:#4B87C3;
-    width: 100%; 
-    height: 70px; 
+/* Estilo do elemento hr */
+hr {
+    border: none; /* Remove a borda padrão */
+    height: 6px; /* Altura da linha */
+    background-color: #4B87C3; /* Cor de fundo */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
+
+/* Altera a cor do hr quando passa o mouse sobre ele */
+hr:hover {
+    background-color: #333; /* Nova cor de fundo ao passar o mouse */
+}
+
 .profile-img {
     width: 350px;
     height: 400px;
@@ -241,3 +251,6 @@ hr{
 }
 
 
+.dark h1 {
+    color: #fff; /* Cor do texto do h1 no modo escuro */
+}
