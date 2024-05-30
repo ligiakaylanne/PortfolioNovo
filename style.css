@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background: #292c35;
+    color: #fff;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+.theme-toggle {
+    margin-right: 20px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem automaticamente em várias linhas */
+    gap: 20px; /* Espaço entre os cartões */
+    justify-content: center; /* Centraliza os cartões na página */
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Largura fixa para cada cartão */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Animação para quando o mouse passar sobre o cartão */
+    background-color: #fff;
+}
+
+.card img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Efeito de hover */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do cartão ligeiramente quando o mouse passa sobre ele */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projeto {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projeto a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projeto h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* .projetos a:hover {
+    transform: scale(1.03);
+} */
+
+/* .projetos img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+p{
+    text-align: center;
+}
+.ligia{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-shadow: #92959c 0 3px;
+}
+.normal{
+    font-size: 23px;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculo, .contato {
+    margin: 0 10px; /* Espaçamento entre os links, se desejar */
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 70px;
+    background-color: #4B87C3;
+    color: white;
+    height: 42px; /* Altura do link */
+    width: 124px; /* Largura do link */
+    line-height: 40px; /* Centraliza o texto verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+hr{
+    color:#4B87C3;
+    width: 100%; 
+    height: 70px; 
+}
+.profile-img {
+    width: 350px;
+    height: 400px;
+    display: block; /* Para centralizar */
+    margin: 0 auto; /* Para centralizar */
+    border: 1px solid #4B87C3; /* Cor da borda */
+    border-radius: 50px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3), 10px 0 15px #4B87C3; /* Sombra do lado direito */
+}
+
