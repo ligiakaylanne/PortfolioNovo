@@ -114,6 +114,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 2.5em;
     color: #333;
+    
 }
 
 .projetos-container {
@@ -177,6 +178,7 @@ p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
     text-shadow: #92959c 0 3px;
+    
 }
 .normal{
     font-size: 23px;
@@ -187,20 +189,37 @@ p{
     justify-content: center;
     align-items: center;
 }
-
 .curriculo, .contato {
-    margin: 0 10px; /* Espaçamento entre os links, se desejar */
+    margin: 0 10px;
     text-decoration: none;
-    border: 1px solid;
-    border-radius: 70px;
-    background-color: #4B87C3;
-    color: white;
-    height: 42px; /* Altura do link */
-    width: 124px; /* Largura do link */
-    line-height: 40px; /* Centraliza o texto verticalmente */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: #FF6B6B; /* Cor de fundo vermelha */
+    color: #FFFFFF; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte divertida */
+    font-size: 18px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+    display: inline-block; /* Garante que o link se comporte como um bloco */
 }
+
+/* Hover Effect */
+.curriculo:hover, .contato:hover {
+    background-color: #FF8E8E; /* Mudança de cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+/* Estilo diferente para o link de contato */
+.contato {
+    background-color: #6BFF6B; /* Cor de fundo verde */
+}
+
+/* Hover Effect para o link de contato */
+.contato:hover {
+    background-color: #8EFF8E; /* Mudança de cor ao passar o mouse para o link de contato */
+}
+
 hr{
     color:#4B87C3;
     width: 100%; 
@@ -215,4 +234,10 @@ hr{
     border-radius: 50px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3), 10px 0 15px #4B87C3; /* Sombra do lado direito */
 }
+.highlighted-text {
+    color: #4B87C3; /* Cor do texto */
+    font-family: 'Arial', sans-serif; /* Fonte */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
 
